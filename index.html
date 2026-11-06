@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDIFI - Kết nối cùng VIDIFI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 50%, #0a1628 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .slogan {
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .logo-wrapper img {
+            width: 120px;
+            height: auto;
+            filter: drop-shadow(0 4px 20px rgba(0, 100, 200, 0.3));
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="slogan">Kết nối cùng VIDIFI</p>
+        <div class="logo-wrapper">
+            <img src="data:image/png;base64,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" alt="VIDIFI Logo">
+        </div>
+    </div>
+</body>
+</html>
